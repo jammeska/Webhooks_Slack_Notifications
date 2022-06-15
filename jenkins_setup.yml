@@ -1,0 +1,16 @@
+---
+- hosts: jenkins_server
+  gather_facts: no
+  tasks:
+    - name: Running java Role
+      include_role:
+        name: java
+
+    - name: Running Maven Role
+      include_role:
+        name: maven
+
+    - name: Running jenkins Role
+      include_role:
+        name: jenkins_server
+

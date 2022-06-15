@@ -1,0 +1,3 @@
+---
+# vars file for jenkins
+jenkins_folders: ['/var/lib/jenkins','/var/cache/jenkins','/var/log/jenkins']

@@ -1,0 +1,8 @@
+---
+# tasks file for java
+- name: install java 11 and java 8 in jenkins server
+  yum:
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+  loop: "{{ java_versions }}"
